@@ -173,8 +173,8 @@ static PKCircleProgressView *CommonInit(PKCircleProgressView *self) {
     NSMutableArray *constraints = [NSMutableArray array];
     [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForCenterView:self.emptyLineCircleView
                                                                          withView:self]];
-    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForWrappedSubview:self.filledLineCircleView
-                                                                           withInsets:UIEdgeInsetsZero]];
+    [constraints addObjectsFromArray:[NSLayoutConstraint constraintsForCenterView:self.filledLineCircleView
+                                                                         withView:self]];
     return constraints;
 }
 
