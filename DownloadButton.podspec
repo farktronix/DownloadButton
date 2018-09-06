@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "DownloadButton"
-  s.version          = "0.1.1"
+  s.version          = "0.1.2"
   s.summary          = "Customizable Appstore style download button."
   s.description      = <<-DESC
                        Customizable Appstore style download button, and other UI components

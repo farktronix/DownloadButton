@@ -50,11 +50,13 @@ static PKCircleView *CommonInit(PKCircleView *self) {
 }
 
 - (void)setStartAngleRadians:(CGFloat)startAngleRadians {
+    NSAssert(startAngleRadians >= 0, @"Invalid start angle");
     _startAngleRadians = startAngleRadians;
     [self setNeedsDisplay];
 }
 
 - (void)setEndAngleRadians:(CGFloat)endAngleRadians {
+    NSAssert(endAngleRadians >= 0, @"Invalid end angle");
     _endAngleRadians = endAngleRadians;
     [self setNeedsDisplay];
 }
